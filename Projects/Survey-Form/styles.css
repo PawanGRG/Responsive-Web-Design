@@ -1,69 +1,62 @@
 body {
-    font-family:"Trebuchet MS", Helvetica, sans-serif;
-    width:100%;
-    height:100vh;
-    font-size:14;
-    background-image:url(https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg);
-    background-position:center center;
-    background-repeat:none; 
-  }
-  
-  h1 {
-    font-size:40px;
-    margin-top:0;
-    margin-bottom:15px;
-  }
-  
-  h1, p {
-    text-align:center;
-  }
-  
-  form {
-    width:60vw;
-    max-width:500px;
-    min-width:300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
-  }
-  
-  fieldset {
-    border:none;
-    padding:2rem 0;
-  }
-  
-  label {
-    display:block;
-  }
-  
-  .inline {
-    width:unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-  }
-  
-  .container {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 0px; /* space inside the box */
-    border-radius: 2px; /* rounded corners */
-    max-width: 600px; /* maximum width of the form */
-    margin: 20px auto; /* vertical spacing and horizontal centering */
-  }
-  
-  .input-group {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 10px; */
-  }
-  
-  input, textarea, select {
-    margin: 10px 0 0 0;
-    width:100%;
-    min-height:2em;
-  }
-  
-  .inline {
-    display:inline;
-    width:unset;
-    margin: 0 0.5em 0 0;
-    vertical-alignment:middle;
-  }
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  font-size: 14px; 
+  background-image: url(https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg);
+  background-position: center center;
+  background-repeat: no-repeat; 
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+label {
+  display: block;
+}
+
+.inline {
+  display: inline;
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle; 
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0px;
+  border-radius: 2px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
