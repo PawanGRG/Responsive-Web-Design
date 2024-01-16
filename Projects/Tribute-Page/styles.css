@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Sans-serif;
+}
+
+.header {
+    position: relative;
+    background-image: url('https://assets.manutd.com/AssetPicker/images/0/0/11/198/771760/treble231550322102572_xlarge.jpg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; /* Center the text horizontally */
+    text-align: center; /* Center the text inside the header */
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header h1, .header p {
+    color: white;
+    font-family: sans-serif;
+    margin: 1px;
+    z-index: 2;
+}
+
+.timeline-container {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    border-left: 3px solid red;
+    z-index: 1;
+}
+
+.timeline-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.timeline-block.right {
+    flex-direction: row-reverse;
+}
+
+.timeline-content, .timeline-image {
+    width: 40%;
+    z-index: 2;
+}
+
+.timeline-content {
+    padding: 0 20px;
+}
+
+.timeline-image img {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 30px;
+    color: #5A5A5A;
+}
+@media (max-width: 768px) {
+    .timeline-block {
+        flex-direction: column;
+    }
+    .timeline-block.right {
+        flex-direction: column;
+    }
+    .timeline-content, .timeline-image {
+        width: 100%;
+    }
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
